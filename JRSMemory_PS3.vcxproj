@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_GCC|PS3">
+      <Configuration>Debug_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_NACS_GCC|PS3">
+      <Configuration>Debug_NACS_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_NACS_SNC|PS3">
+      <Configuration>Debug_NACS_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_NAC_GCC|PS3">
+      <Configuration>Debug_NAC_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_NAC_SNC|PS3">
+      <Configuration>Debug_NAC_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_SNC|PS3">
+      <Configuration>Debug_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_S_GCC|PS3">
+      <Configuration>Debug_S_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_S_SNC|PS3">
+      <Configuration>Debug_S_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Master_GCC|PS3">
+      <Configuration>Master_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Master_SNC|PS3">
+      <Configuration>Master_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_GCC|PS3">
+      <Configuration>Release_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_NACS_GCC|PS3">
+      <Configuration>Release_NACS_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_NACS_SNC|PS3">
+      <Configuration>Release_NACS_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_NAC_GCC|PS3">
+      <Configuration>Release_NAC_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_NAC_SNC|PS3">
+      <Configuration>Release_NAC_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SNC|PS3">
+      <Configuration>Release_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_S_GCC|PS3">
+      <Configuration>Release_S_GCC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_S_SNC|PS3">
+      <Configuration>Release_S_SNC</Configuration>
+      <Platform>PS3</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1AB42E52-A7CF-49EF-B55F-9EC758D5A681}</ProjectGuid>
+    <RootNamespace>JRSMemory_PS3</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>SNC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>GCC</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'">$(SolutionDir)\OutDir\PS3\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'">*.obj%3b*.d%3b*.map%3b*.lst%3b*.pch%3b$(TargetPath)</ExtensionsToDeleteOnClean>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'" />
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_DEBUG;__GCC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Debug.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;NDEBUG;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Release.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;SN_TARGET_PS3;_DEBUG;__GCC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Debug_NAC.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLESENTINELCHECKS;MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;SN_TARGET_PS3;_DEBUG;__GCC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Debug_NACS.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_S_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;_DEBUG;__GCC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Debug_S.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_DEBUG;__SNC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Debug.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NAC_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;SN_TARGET_PS3;_DEBUG;__SNC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Debug_NAC.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_NACS_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;_DEBUG;__SNC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Debug_NACS.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_S_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-g -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;_DEBUG;__SNC__;__CELL_ASSERT__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Debug_S.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NAC_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;SN_TARGET_PS3;NDEBUG;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Release_NAC.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NACS_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;NDEBUG;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Release_NACS.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_S_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;NDEBUG;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Release_S.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NAC_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;SN_TARGET_PS3;NDEBUG;__SNC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Release_NAC.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;NDEBUG;__SNC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Release.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_NACS_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLENAMEANDSTACKCHECKS;MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;NDEBUG;__SNC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Release_NACS.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_S_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_ENABLESENTINELCHECKS;SN_TARGET_PS3;NDEBUG;__SNC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Release_S.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Master_GCC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Wall -fno-exceptions -fno-rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_MINIMAL;SN_TARGET_PS3;NDEBUG;__GCC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\gcc\JRSMemory_Master.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Master_SNC|PS3'">
+    <ClCompile>
+      <AdditionalOptions>-O2 -Xc-=rtti %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>Include;$(SN_PS3_PATH)\ppu\include\sn;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEMORYMANAGER_MINIMAL;SN_TARGET_PS3;NDEBUG;__SNC__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(SolutionDir)Lib\ps3\snc\JRSMemory_Master.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\JRSMemory.cpp" />
+    <ClCompile Include="Source\JRSMemory_EnhancedDebugging.cpp" />
+    <ClCompile Include="Source\JRSMemory_Heap.cpp" />
+    <ClCompile Include="Source\JRSMemory_LiveView.cpp" />
+    <ClCompile Include="Source\JRSMemory_NIHeap.cpp" />
+    <ClCompile Include="Source\JRSMemory_Pools.cpp" />
+    <ClCompile Include="Source\PS3\JRSMemory_PS3Specific.cpp" />
+    <ClCompile Include="Source\PS3\JRSMemory_ThreadLocks_PS3.cpp" />
+    <ClCompile Include="Source\PS3\JRSMemory_Timer_PS3.cpp" />
+    <ClCompile Include="Source\PS3\JRSThread_PS3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\JRSCoreTypes.h" />
+    <ClInclude Include="Include\JRSMemory.h" />
+    <ClInclude Include="Source\JRSMemory_ErrorCodes.h" />
+    <ClInclude Include="Source\JRSMemory_Internal.h" />
+    <ClInclude Include="Include\JRSMemory_Pools.h" />
+    <ClInclude Include="Include\JRSMemory_ThreadLocks.h" />
+    <ClInclude Include="Source\JRSMemory_Timer.h" />
+    <ClInclude Include="Include\JRSThread.h" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

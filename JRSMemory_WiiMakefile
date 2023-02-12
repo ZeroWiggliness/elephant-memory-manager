@@ -1,0 +1,83 @@
+
+.SUFFIXES: .cpp
+
+# Set up paths to all the Elephant bits
+CWPATH=$(CWFOLDER_RVL)
+
+INCLUDEDIR=-I- -I"./Include" -ir "./Source" -ir "$(REVOLUTION_SDK_ROOT)/include" -ir "$(CWPATH)/PowerPC_EABI_Support/MSL"
+CC="$(CWPATH)/PowerPC_EABI_Tools/Command_Line_Tools/mwcceppc.exe"
+CCFLAGS=-maxerrors 10 -maxwarnings 10 -c -proc gekko -gdwarf-2 -align powerpc -fp hardware -Cpp_exceptions off -enum int -gccinc -RTTI off -W all -W nofilecaps -W nosysfilecaps -W nounusedarg
+CCPREDEFS=-DGEKKO -DRVL -DHOLLYWOOD_REV=1 -DBROADWAY_REV=1 -DIOP_REV=1
+
+ELEPHANTDEF=$(ELEPHANTINFLAGS)
+ELEPHANTCCFLAGS=$(ELEPEHANTINCCFLAGS)
+
+# -O4,p             - full optimizations, optimize for speed (not code size)
+# -inline auto      - inline small functions where possible,
+#                     even without inline directirve
+# -unused           - show unused symbols
+
+# For obj files generated
+OUT=OutDir/Wii
+
+# Library directory
+LIB=Lib/Wii
+
+# Library filename
+LIBNAME=$(LIBNAMEIN)
+
+# Source files
+SRC = Source/JRSMemory.cpp Source/JRSMemory_EnhancedDebugging.cpp Source/JRSMemory_LiveView.cpp Source/JRSMemory_Pools.cpp Source/Wii/JRSThread_Wii.cpp Source/Wii/JRSMemory_Timer_Wii.cpp Source/Wii/JRSMemory_ThreadLocks_Wii.cpp Source/Wii/JRSMemory_Wii.cpp 
+#
+
+# Output names
+OBJ = $(SRC:.cpp=.o)
+OUTOBJ = $(OUT)/JRSMemory.o $(OUT)/JRSMemory_EnhancedDebugging.o $(OUT)/JRSMemory_LiveView.o $(OUT)/JRSMemory_Pools.o $(OUT)/JRSThread_Wii.o $(OUT)/JRSMemory_Timer_Wii.o $(OUT)/JRSMemory_ThreadLocks_Wii.o $(OUT)/JRSMemory_Wii.o 
+#$(addsuffix .o, $(basename $(SRC)))
+#$(SRC:.cpp=.o)
+#$(notdir $(basename $(SRC))))
+
+# Linker for libs
+CL="$(CWPATH)/PowerPC_EABI_Tools/Command_Line_Tools/mwldeppc.exe"
+CLFLAGS=\
+	-xm l\
+	-nodefaults\
+	-proc gekko\
+	-gdwarf-2\
+	-msgstyle parseable\
+	-nowraplines\
+	-fp hardware\
+	-unused\
+
+# build all
+all: cleanlib
+	make ELEPHANTINFLAGS="-D_DEBUG" ELEPHANTCCFLAGS="-O0,p -inline off" LIBNAMEIN=Debug build
+	make ELEPHANTINFLAGS="-D_DEBUG -DMEMORYMANAGER_ENABLENAMEANDSTACKCHECKS" ELEPHANTCCFLAGS="-O0,p -inline off" LIBNAMEIN=Debug_NAC build
+	make ELEPHANTINFLAGS="-D_DEBUG -DMEMORYMANAGER_ENABLESENTINELCHECKS" ELEPHANTCCFLAGS="-O0,p -inline off" LIBNAMEIN=Debug_S build
+	make ELEPHANTINFLAGS="-D_DEBUG -DMEMORYMANAGER_ENABLENAMEANDSTACKCHECKS -DMEMORYMANAGER_ENABLESENTINELCHECKS" ELEPHANTCCFLAGS="-O0,p -inline off" LIBNAMEIN=Debug_NACS build
+	make ELEPHANTINFLAGS="-DNDEBUG" ELEPHANTCCFLAGS="-O4,p -inline auto" LIBNAMEIN=Release build
+	make ELEPHANTINFLAGS="-DNDEBUG -DMEMORYMANAGER_ENABLENAMEANDSTACKCHECKS" ELEPHANTCCFLAGS="-O4,p -inline auto" LIBNAMEIN=Release_NAC build
+	make ELEPHANTINFLAGS="-DNDEBUG -DMEMORYMANAGER_ENABLESENTINELCHECKS" ELEPHANTCCFLAGS="-O4,p -inline auto" LIBNAMEIN=Release_S build
+	make ELEPHANTINFLAGS="-DNDEBUG -DMEMORYMANAGER_ENABLENAMEANDSTACKCHECKS -DMEMORYMANAGER_ENABLESENTINELCHECKS" ELEPHANTCCFLAGS="-O4,p -inline auto" LIBNAMEIN=Release_NACS build
+	make ELEPHANTINFLAGS="-DNDEBUG -DMEMORYMANAGER_MINIMAL" ELEPHANTCCFLAGS="-O4,p -inline auto" LIBNAMEIN=Master build
+	
+# build debug
+debug: 
+	make ELEPHANTINFLAGS="-D_DEBUG" ELEPHANTCCFLAGS="-O0,p -inline off" LIBNAMEIN=Debug build
+	
+#	Build everything
+build: clean makealldirs $(OBJ)
+	$(CL) $(CLFLAGS) $(OUTOBJ) -o $(LIB)/$(LIBNAME).a 
+	
+%.o : %.cpp
+	$(CC) $(INCLUDEDIR) $(ELEPHANTDEF) $(ELEPHANTCCFLAGS) $(CCPREDEFS) $(CCFLAGS) $< -o $(OUT)/$(notdir $@)
+	
+clean:
+	rm -r -f $(OUT)
+	
+cleanlib:	
+	rm -r -f $(LIB)
+	
+makealldirs:
+	mkdir -p $(OUT)
+	mkdir -p $(LIB)

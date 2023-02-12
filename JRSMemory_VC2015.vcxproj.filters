@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\PC\JRSThread_PC.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSMemory_Timer_PC.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSMemory_ThreadLocks_PC.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSMemory_PCSpecific.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_EnhancedDebugging.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_Heap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_LiveView.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_NIHeap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_Pools.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\PC\resource.h" />
+    <ClInclude Include="Include\JRSMemory.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSCoreTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JRSMemory_ErrorCodes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_Heap.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JRSMemory_Internal.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_Pools.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_Thread.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_ThreadLocks.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JRSMemory_Timer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\PC\Elephant.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PC">
+      <UniqueIdentifier>{f5db58d6-a36a-4afb-9937-f48216276048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{ebb6ffe9-5e59-4797-81b4-5cba20a5e052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{ad7e48e4-67cc-444d-bed8-d60bd0b4406a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
