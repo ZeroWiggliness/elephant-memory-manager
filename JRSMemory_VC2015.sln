@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JRSMemory_VC2015", "JRSMemory_VC2015.vcxproj", "{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_NAC|x64 = Debug_NAC|x64
+		Debug_NAC|x86 = Debug_NAC|x86
+		Debug_NACS|x64 = Debug_NACS|x64
+		Debug_NACS|x86 = Debug_NACS|x86
+		Debug_S|x64 = Debug_S|x64
+		Debug_S|x86 = Debug_S|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Master|x64 = Master|x64
+		Master|x86 = Master|x86
+		MasterDll|x64 = MasterDll|x64
+		MasterDll|x86 = MasterDll|x86
+		Release_NAC_Dll|x64 = Release_NAC_Dll|x64
+		Release_NAC_Dll|x86 = Release_NAC_Dll|x86
+		Release_NAC|x64 = Release_NAC|x64
+		Release_NAC|x86 = Release_NAC|x86
+		Release_NACS_Dll|x64 = Release_NACS_Dll|x64
+		Release_NACS_Dll|x86 = Release_NACS_Dll|x86
+		Release_NACS|x64 = Release_NACS|x64
+		Release_NACS|x86 = Release_NACS|x86
+		Release_S_Dll|x64 = Release_S_Dll|x64
+		Release_S_Dll|x86 = Release_S_Dll|x86
+		Release_S|x64 = Release_S|x64
+		Release_S|x86 = Release_S|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseDll|x64 = ReleaseDll|x64
+		ReleaseDll|x86 = ReleaseDll|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NAC|x64.ActiveCfg = Debug_NAC|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NAC|x64.Build.0 = Debug_NAC|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NAC|x86.ActiveCfg = Debug_NAC|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NAC|x86.Build.0 = Debug_NAC|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NACS|x64.ActiveCfg = Debug_NACS|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NACS|x64.Build.0 = Debug_NACS|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NACS|x86.ActiveCfg = Debug_NACS|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_NACS|x86.Build.0 = Debug_NACS|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_S|x64.ActiveCfg = Debug_S|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_S|x64.Build.0 = Debug_S|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_S|x86.ActiveCfg = Debug_S|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug_S|x86.Build.0 = Debug_S|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug|x64.ActiveCfg = Debug|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug|x64.Build.0 = Debug|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Debug|x86.Build.0 = Debug|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Master|x64.ActiveCfg = Master|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Master|x64.Build.0 = Master|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Master|x86.ActiveCfg = Master|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Master|x86.Build.0 = Master|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.MasterDll|x64.ActiveCfg = MasterDll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.MasterDll|x64.Build.0 = MasterDll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.MasterDll|x86.ActiveCfg = MasterDll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.MasterDll|x86.Build.0 = MasterDll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC_Dll|x64.ActiveCfg = Release_NAC_Dll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC_Dll|x64.Build.0 = Release_NAC_Dll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC_Dll|x86.ActiveCfg = Release_NAC_Dll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC_Dll|x86.Build.0 = Release_NAC_Dll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC|x64.ActiveCfg = Release_NAC|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC|x64.Build.0 = Release_NAC|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC|x86.ActiveCfg = Release_NAC|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NAC|x86.Build.0 = Release_NAC|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS_Dll|x64.ActiveCfg = Release_NACS_Dll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS_Dll|x64.Build.0 = Release_NACS_Dll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS_Dll|x86.ActiveCfg = Release_NACS_Dll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS_Dll|x86.Build.0 = Release_NACS_Dll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS|x64.ActiveCfg = Release_NACS|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS|x64.Build.0 = Release_NACS|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS|x86.ActiveCfg = Release_NACS|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_NACS|x86.Build.0 = Release_NACS|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S_Dll|x64.ActiveCfg = Release_S_Dll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S_Dll|x64.Build.0 = Release_S_Dll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S_Dll|x86.ActiveCfg = Release_S_Dll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S_Dll|x86.Build.0 = Release_S_Dll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S|x64.ActiveCfg = Release_S|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S|x64.Build.0 = Release_S|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S|x86.ActiveCfg = Release_S|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release_S|x86.Build.0 = Release_S|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release|x64.ActiveCfg = Release|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release|x64.Build.0 = Release|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release|x86.ActiveCfg = Release|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.Release|x86.Build.0 = Release|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.ReleaseDll|x64.ActiveCfg = ReleaseDll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.ReleaseDll|x64.Build.0 = ReleaseDll|x64
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.ReleaseDll|x86.ActiveCfg = ReleaseDll|Win32
+		{BD1CA0C8-775E-4D4D-A7FD-D70ED45ADDE8}.ReleaseDll|x86.Build.0 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

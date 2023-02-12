@@ -1,0 +1,9 @@
+Lib
+Dll
+Obj
+/*.db
+/*.sdf
+*.user
+Debug
+Release
+.vs

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\JRSMemory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_EnhancedDebugging.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_LiveView.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSMemory_PCSpecific.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_Pools.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSMemory_ThreadLocks_PC.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSMemory_Timer_PC.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PC\JRSThread_PC.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_NIHeap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\JRSMemory_Heap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\PC\resource.h" />
+    <ClInclude Include="Include\JRSCoreTypes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JRSMemory_Internal.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JRSMemory_ErrorCodes.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_Pools.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_Thread.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_ThreadLocks.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\JRSMemory_Timer.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\JRSMemory_Heap.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\PC\Elephant.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{a46d327c-101a-47b3-880b-ae85c057c3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{19447271-4f26-4fd5-a87a-5698922bfe10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
